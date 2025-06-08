@@ -1,0 +1,93 @@
+/* Painel principal da página de resultados */
+
+.painel-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 80px;
+    width: 50vw;
+    height: 100dvh;
+    background-color: #F9F9F9;
+    gap: 42px;
+}
+
+.marca-empresa img {
+    height: 32px;
+}
+
+.area-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card-resultado .descricao-campo {
+    font-size: 18px;
+    color: #707070;
+}
+
+.card-resultado .valor-parcela-mensal,
+.card-resultado .montante-total {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}
+
+.detalhes-financiamento {
+    margin-top: 20px;
+}
+
+.total-parcelas {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.opcoes-navegacao {
+    margin-top: 32px;
+}
+
+.refazer-simulacao {
+    background-color: #20C982;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.refazer-simulacao:hover {
+    background-color: #1BA06B;
+}
+
+.rodape-info {
+    margin-top: auto;
+}
+
+.rodape-info p {
+    font-size: 14px;
+    color: #999;
+}
+
+.botao-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #20C982;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(32, 201, 130, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-flutuante:hover {
+    transform: scale(1.1);
+}

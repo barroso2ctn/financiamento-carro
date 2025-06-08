@@ -1,0 +1,44 @@
+/* Painel esquerdo da página principal */
+.container-esquerdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100dvh;
+}
+
+.marca {
+    width: 426px;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal h1 {
+    width: 426px;
+    color: #4E4E4E;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal .destaque {
+    font-weight: 600;
+    color: #20C982;
+}
+
+.descricao {
+    width: 410px;
+    color: #939393;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.elemento-decorativo {
+    width: 144px;
+    height: 146px;
+    position: relative;
+    bottom: 73%;
+    left: 50%;
+}

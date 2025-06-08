@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Finance</title>
+</head>
+
+<body>
+    <div class="container-esquerdo">
+        <header class="marca">
+            <img src="assets/images/logoTitle.png" alt="Logo da empresa">
+        </header>
+
+        <main class="conteudo-principal">
+            <h1>Simule o seu <span class="destaque">financiamento</span></h1>
+            <p class="descricao">Escolha as melhores condições para o financiamento do seu veículo.</p>
+        </main>
+
+        <figure class="ilustracao-veiculo">
+            <img src="assets/images/car.png" alt="Ilustração de um carro">
+        </figure>
+
+        <div class="elemento-decorativo">
+            <img src="assets/images/ellipseArrow.png" alt="Elemento decorativo">
+        </div>
+    </div>
+
+    <aside class="painel-direito">
+        <header class="cabecalho-formulario">
+            <img src="assets/images/emojis.png" alt="Ícones representativos">
+            <p class="instrucao">Preencha os campos e simule o seu financiamento.</p>
+        </header>
+
+        <section class="area-formulario">
+            <form method="post" action="" id="financeForm">
+                <div class="grupo-campo">
+                    <label for="valorFinanciamento">Valor do veículo</label>
+                    <input 
+                        type="text" 
+                        name="valorFinanciamento" 
+                        id="valorFinanciamento" 
+                        placeholder="R$ 0,00" 
+                        maxlength="15"
+                        required
+                    >
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="instituicaoBancaria">Selecione um banco</label>
+                    <select name="instituicaoBancaria" id="instituicaoBancaria" required>
+                        <option value="" disabled selected>Selecione um banco</option>
+                        <option value="caixa">Caixa (1,0487%)</option>
+                        <option value="santander">Santander (1,0567%)</option>
+                        <option value="bradesco">Bradesco (1,0532%)</option>
+                        <option value="itau">Itaú (1,0519%)</option>
+                        <option value="nubank">Nubank (1,0595%)</option>
+                        <option value="inter">Inter (1,0602%)</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="prazoMeses">Quantas parcelas?</label>
+                    <select name="prazoMeses" id="prazoMeses" required>
+                        <option value="" disabled selected>Em quantos meses?</option>
+                        <option value="6">6 meses</option>
+                        <option value="12">12 meses</option>
+                        <option value="18">18 meses</option>
+                        <option value="24">24 meses</option>
+                        <option value="36">36 meses</option>
+                        <option value="48">48 meses</option>
+                        <option value="60">60 meses</option>
+                        <option value="72">72 meses</option>
+                    </select>
+                </div>
+
+                <button class="botao-simular" type="submit">Simular o financiamento</button>
+                <a href="#" class="link-resultado">Ver página de resultados</a>
+            </form>
+        </section>
+    </aside>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
